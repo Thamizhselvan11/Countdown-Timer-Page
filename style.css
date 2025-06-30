@@ -1,0 +1,155 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image:url(./assests/bg.webp);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .imgp{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+        img{
+            width: 120px;
+        }
+        p{
+            font-size: 40px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 5px;
+            word-spacing: 3px;
+        }
+        .boxes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+        .box{
+            display: flex;
+            gap: 2rem;
+        }
+        .box-down{
+            font-size: 25px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 2px;
+            display: flex;
+            gap: 8rem;
+        }
+        .b1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 180px;
+            height: 200px;
+            border: 2px red solid;
+            border-radius: 10px;
+            background-color: red;
+            color: aliceblue;
+            font-size:130px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .b2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 180px;
+            height: 200px;
+            border: 2px darkblue solid;
+            border-radius: 10px;
+            background-color:darkblue;
+            color: aliceblue;
+            font-size:130px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
+        }
+        .b3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 180px;
+            height: 200px;
+            border: 2px skyblue solid;
+            border-radius: 10px;
+            background-color:skyblue;
+            color: aliceblue;
+            font-size:130px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;     
+        }
+        .b4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 180px;
+            height: 200px;
+            border: 2px green solid;
+            border-radius: 10px;
+            background-color:green;
+            color: aliceblue;
+            font-size:130px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
+        }
+        @media screen and (max-width:426px){
+            body{
+                background-position-x:right;
+            }
+            .imgp{
+                gap: 2rem;
+            }
+            img{
+                width: 60px;
+            }
+            p{
+                font-size: 18px;   
+            }
+            .boxes{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                column-gap: 40px;
+            }
+            .box{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4,1fr);
+            }
+            .box-down{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4,1fr);
+                row-gap: 120px;
+                font-size: 15px;
+            }
+            .b1{
+                width: 90px;
+                height: 100px;
+                font-size:50px ;
+            }
+            .b2{
+                width: 90px;
+                height: 100px;
+                font-size:50px ;
+            }
+            .b3{
+                width: 90px;
+                height: 100px;
+                font-size:50px ;
+            }
+            .b4{
+                width: 90px;
+                height: 100px;
+                font-size:50px ;
+            }
+        }
